@@ -1,5 +1,7 @@
 import logo from "../logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
   Nav,
   Navbar,
@@ -9,6 +11,7 @@ import {
   Form,
   FormControl,
   Button,
+  InputGroup
 } from "react-bootstrap";
 
 function NavigationBar() {
@@ -20,7 +23,6 @@ function NavigationBar() {
           bg="dark"
           variant="dark"
           expand={expand}
-          // className="mb-3"
         >
           <Container fluid>
             <Navbar.Brand href="#">
@@ -67,12 +69,22 @@ function NavigationBar() {
                   </NavDropdown> */}
                 </Nav>
                 <Form className="d-flex">
-                  <FormControl
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
+                  <InputGroup>
+                  {/* <InputGroup.Text >@</InputGroup.Text> */}
+                  {/* <InputGroup.Append> */}
+                      <InputGroup.Text>
+                        <FontAwesomeIcon icon={faSearch} />
+                      </InputGroup.Text>
+                      {/* </InputGroup.Append> */}
+                    <FormControl
+                      type="search"
+                      placeholder="Search..."
+                      className="me-2"
+                      aria-label="Search"
+                    />
+                    
+                  </InputGroup>
+                 
                   <Button variant="outline-success">Search</Button>
                 </Form>
               </Offcanvas.Body>
