@@ -1,37 +1,43 @@
-*{
-margin:0;
-padding:0;
-}
 
+*{
+  margin:0;
+  padding:0;
+}
 .container{
-background:linear-gradient(135deg,#858c62,#f88759);
-width:100%;
+background:linear-gradient(to right,#373b44,#4286f4);
 min-height:100vh;
+min-width:100vw;
 display:flex;
 justify-content:center;
 align-items:center;
+
+
 }
 
 .app-wrapper{
 background-color:#fff;
-min-width:350px;
-min-height:650px;
-padding:30px;
-box-sizing:border-box;
+min-width:400px;
+min-height:700px;
+width:600px;
+height:800px;
+padding:20px;
+/* box-sizing:border-box; */
 border-radius:5px;
+margin:0;
 }
 
 .title{
-    color:#f80759;
+    color:#3307f8;
     text-align:center;
     margin:80px 0px 40px 0px;
+    font-size:40px;
   }
   .name,
   .email,
   .password{
    margin:20px;
     color:#969292;
-   font-size:16px;
+   font-size:24px;
   }
 
   .password{
@@ -55,11 +61,12 @@ border-radius:5px;
   .submit{
     display:flex;
     text-transform:uppercase;
-    font-size:20px;
+    font-size:30px;
     border-radius:25px;
     color:white;
     padding:18px 60px;
-    background:linear-gradient(to right,#ab1dcf,#f88759);
+    /* background:linear-gradient(to right,#7f7fd5,#86a8e7,#91eae4); */
+    background:#7f7fd5;
     box-shadow:Orgba(0,0,0,0.3)0px 19px 38px,
       Orgba(0,0,0,0.22)0px 15px 12px;
     margin:auto;
@@ -67,6 +74,17 @@ border-radius:5px;
     border:none;
     cursor:pointer;
     transition:all 0.1s;
+  }
+
+  .submit:hover{
+    background-image:linear-gradient(to right,#7f7fd5,#86a8e7,#91eae4);
+    animation:slidebg 2s linear infinite;
+  }
+
+  @keyframes slidebg{
+    to{
+      background-position:20vw;
+    }
   }
 
   button:active{

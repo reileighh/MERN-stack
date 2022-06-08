@@ -25,7 +25,7 @@ function NavigationBar() {
           expand={expand}
         >
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               {" "}
               <img
                 alt="logo"
