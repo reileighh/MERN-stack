@@ -1,7 +1,7 @@
 import logo from "../logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faSearch } from "@fortawesome/free-solid-svg-icons";
+import {  faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
   Nav,
   Navbar,
@@ -49,11 +49,12 @@ function NavigationBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">About</Nav.Link>
-                  <Nav.Link href="#action3">Contact</Nav.Link>
-                  <Nav.Link href="#action4">Settings</Nav.Link>
-                  <Nav.Link href="#action5">Login</Nav.Link>
+                  <Nav.Link href="/" to="/">Home</Nav.Link>
+                  <Nav.Link href="/About">About</Nav.Link>
+                  <Nav.Link href="/Contact" >Contact</Nav.Link>
+                  <Nav.Link href="/Settings" >Settings</Nav.Link>
+                  <Nav.Link href="/Login" >Login</Nav.Link>
+                  <Nav.Link href="/Signup" >Signup</Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

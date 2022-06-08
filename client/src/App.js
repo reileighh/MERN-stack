@@ -1,14 +1,26 @@
 import React from "react";
-import ControlledCarousel from "./components/Carousel";
-import NavigationBar from "./components/Navbar";
+import About  from './pages/About';
+import  Contact  from './pages/Contact';
+import  Home  from './pages/Home';
+import Login  from './pages/Login';
+import Signup from './pages/Signup';
+import Settings from './pages/Settings';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div>
-      <>
-        <NavigationBar />
-        <ControlledCarousel />
-      </>
-    </div>
+    <Router>
+      <div>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Signup" element={<Signup/>} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Settings" element={<Settings/>} />
+      </Routes>
+      </div>
+    </Router>
   );
 }

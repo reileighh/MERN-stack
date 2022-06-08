@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Signup.css";
-import Form from "./Form";
+import "../auth/Signup.css";
+import Form from "../auth/Form";
 
 function Signup() {
   return (
