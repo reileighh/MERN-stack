@@ -1,6 +1,7 @@
+import { faChainSlash } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import BackgroundPicture from "../assets/BackgroundPicture.jpg";
+import China from "../assets/China.jpg";
 
 function ControlledCarousel() {
   return (
@@ -8,7 +9,7 @@ function ControlledCarousel() {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src={BackgroundPicture}
+          src={China}
           alt="First slide"
           height={700}
         />
@@ -20,7 +21,7 @@ function ControlledCarousel() {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src={BackgroundPicture}
+          src={China}
           alt="Second slide"
           height={700}
         />
@@ -32,7 +33,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={BackgroundPicture}
+          src={China}
           alt="Third slide"
           height={700}
         />
