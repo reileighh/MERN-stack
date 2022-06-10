@@ -8,16 +8,18 @@ import './DestinationStyle.css';
 
 const Destination = () => {
   return (
-    <div className="d-flex justify-content-around mt-lg-5">
-      <Card style={{ width: '24rem'}} className= 'card-style' >
+    <div className="d-flex justify-content-around mt-lg-5 mb-lg-5">
+      <Card style={{ width: '24rem'}} className= 'card-style' role="button" onClick="location.href='/China'" >
+        {/* <Card.Link href='/China'> */}
         <Card.Img variant="top" src={China} />
         <Card.Body>
           <Card.Title>China</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk
-            of the card's content.
+            Tours to China are held in a variety of exciting ways - from the dusty deserts of Central 
+            Asia to tropical beaches stretching along the Pacific Ocean.
           </Card.Text>
         </Card.Body>
+        {/* </Card.Link> */}
       </Card>
 
 
@@ -36,8 +38,8 @@ const Destination = () => {
         <Card.Body>
           <Card.Title>New Zealand</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk
-            of the card's content.
+            New Zealand's amazing National Parks, glacier trekking and many extreme sports make it
+            a beautiful place for those who week adventure and adrenaline!
           </Card.Text>
         </Card.Body>
       </Card>

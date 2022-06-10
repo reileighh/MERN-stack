@@ -2,6 +2,7 @@ import React from "react";
 import NavigationBar from "../components/Navbar";
 import ControlledCarousel from "../components/Carousel";
 import Destination from '../components/Destination';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <NavigationBar />
       <ControlledCarousel />
       <Destination />
+      <Footer />
     </div>
   );
 }
