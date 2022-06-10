@@ -4,11 +4,12 @@ import China from "../assets/China.jpg"
 import Sweden from "../assets/Sweden.jpg";
 import NewZealand from "../assets/NewZealand.jpg";
 import France from "../assets/France.jpg";
-import Norway from "../assets/Norway.jpg";
+import './DestinationStyle.css';
+
 const Destination = () => {
   return (
     <div className="d-flex justify-content-around mt-lg-5">
-      <Card style={{ width: '24rem'}} className= 'hover-shadow' >
+      <Card style={{ width: '24rem'}} className= 'card-style' >
         <Card.Img variant="top" src={China} />
         <Card.Body>
           <Card.Title>China</Card.Title>
@@ -20,7 +21,7 @@ const Destination = () => {
       </Card>
 
 
-      <Card style={{ width: '24rem' }}>
+      <Card style={{ width: '24rem' }} className= 'card-style'>
         <Card.Img variant="top" src={Sweden}/>
         <Card.Body>
           <Card.Title>Sweden</Card.Title>
@@ -30,7 +31,7 @@ const Destination = () => {
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '24rem' }}>
+      <Card style={{ width: '24rem' }} className= 'card-style'>
         <Card.Img variant="top" src={NewZealand} />
         <Card.Body>
           <Card.Title>New Zealand</Card.Title>
@@ -42,7 +43,7 @@ const Destination = () => {
       </Card>
 
       
-      <Card style={{ width: '24rem' }}>
+      <Card style={{ width: '24rem' }} className= 'card-style'>
         <Card.Img variant="top" src={France} />
         <Card.Body>
           <Card.Title>France</Card.Title>
