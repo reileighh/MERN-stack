@@ -5,6 +5,7 @@ import  Home  from './pages/Home';
 import Login  from './pages/Login';
 import Signup from './pages/Signup';
 import Settings from './pages/Settings';
+import Review from './pages/Review';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/About" element={<About/>} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Settings" element={<Settings/>} />
+        <Route path="/Reviews" element={<Review/>} />
       </Routes>
       </div>
     </Router>
