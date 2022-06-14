@@ -1,0 +1,17 @@
+.body{
+    background-image:url(../assets/LoginPic2.jpg);
+    background-repeat: no-repeat;
+    /* min-height:100vh;
+    min-width:100vw; */
+    background-size:cover;
+    height:100vh;
+    width:100%;
+}
+
+.signupform{
+    background:grey;
+    opacity:0.9;
+    align-items:center;
+    margin-left:16px;
+
+}
