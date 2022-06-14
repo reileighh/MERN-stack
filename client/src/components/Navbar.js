@@ -34,7 +34,7 @@ function NavigationBar() {
                 height="30"
                 className="d-inline-block align-top"
               />{" "}
-              Yummy Tummy
+              Travellia
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
