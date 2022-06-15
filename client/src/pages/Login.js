@@ -1,5 +1,4 @@
 import React from 'react';
-import LoginPic from '../assets/LoginPic.jpg';
 import '../Styles/Login.css';
 import Navbar from '../components/Navbar';
 import styled from 'styled-components'
@@ -13,6 +12,7 @@ function Login() {
     flex-direction:row;
   `
 
+
   return (
     
     <div className="body">
@@ -20,45 +20,42 @@ function Login() {
       <Div>
         <div className="signupform">
           <form >
-          <div className="name">
-            <label className="label">Full Name</label>
-            <input
-              className="input"
-              type="text"
-              name="fullname"
-              
+            <h1 style={{justifyContent:"center"}}>Login to your account</h1>
+            <hr
+            style={{
+              marginTop: '0px',
+              backgroundColor:"white"
+            }}
             />
-          </div>
-          <div className="username">
-            <label className="label">Username</label>
+         
+          <div style={{marginTop:"20px"}}>
             <input
               className="input"
               type="text"
               name="username"
+              placeholder="Username"
              
             />
           </div>
-          <div className="email">
-            <label className="label">Email</label>
-            <input
-              className="input"
-              type="email"
-              name="email"
-          
-            />
-          </div>
-          <div className="password">
-            <label className="label">Password</label>
+      
+          <div style={{marginTop:"20px"}}>
             <input
               className="input"
               type="password"
               name="password"
-             
+              placeholder="Password"
             />
           </div>
-          <div>
-            <button className="submit" >
-              Sign Up
+
+          <div style={{marginTop:"15px"}}>
+            <a href="/forgot" style={{color:"white", textDecoration:"none"}}>Forgot Password?</a>
+
+          </div>
+
+
+          <div style={{marginTop:"20px"}}>
+            <button className="but" >
+              Log In
             </button>
           </div>
 

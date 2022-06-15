@@ -1,3 +1,9 @@
+h1{
+    color:white;
+    font-family:Arial, Helvetica,sans-serif;
+    margin-bottom:6px;
+}
+
 .body{
     background-image:url(../assets/LoginPic2.jpg);
     background-repeat: no-repeat;
@@ -9,9 +15,42 @@
 }
 
 .signupform{
-    background:grey;
-    opacity:0.9;
+    background:rgb(17, 17, 17);
+    opacity:0.7;
     align-items:center;
-    margin-left:16px;
+    margin-left:32px;
+    margin-top:50px;
+    padding:48px;
+    width:40%;
+    height:50%;
 
 }
+
+   input[type="text"]::placeholder,
+   input[type="password"]::placeholder
+    {
+    color:black;
+    font-weight:600;
+    font-size:24px;
+    align-items:center;
+  }
+
+  .input{
+    padding:28px 300px 28px 16px;
+    opacity: 1.0;
+  }
+
+  .but{
+    padding:16px 16px 16px 16px;
+    background:rgb(255, 94, 0);
+    color:black;
+    font-weight:700;
+    width:550px;
+    font-size:24px;
+    opacity:1;
+    
+  }
+
+  .but:hover{
+    background-image:linear-gradient(to right,rgb(255, 94, 0),white);
+  }
