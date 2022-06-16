@@ -1,5 +1,6 @@
 import logo from "../logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -14,7 +15,7 @@ import {
   InputGroup
 } from "react-bootstrap";
 
-function NavigationBar() {
+const NavigationBar = React.memo (() => {
   return (
     <div className="App">
       {["md"].map((expand) => (
@@ -95,6 +96,6 @@ function NavigationBar() {
       ))}
     </div>
   );
-}
+})
 
 export default NavigationBar;
