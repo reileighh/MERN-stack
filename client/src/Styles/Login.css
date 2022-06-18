@@ -20,9 +20,9 @@ h1{
     align-items:center;
     margin-left:32px;
     margin-top:50px;
-    padding:48px;
+    padding: 24px 48px;
     width:40%;
-    height:55%;
+    height:62vh;
 
 }
 
@@ -38,7 +38,7 @@ h1{
   .inputLogin{
     padding:28px 300px 28px 16px;
     opacity: 1.0;
-    height:32px;
+    height:15%;
     font-size:20px;
     outline:none;
    width:100%;
@@ -50,14 +50,16 @@ h1{
   }
 
   .but{
-    padding:16px 16px 16px 16px;
+    padding:8px 16px 16px 16px;
     background:rgb(255, 94, 0);
     color:black;
     font-weight:700;
     width:100%;
     font-size:24px;
     opacity:1;
-    
+    height:15%;
+    margin-bottom:0px;
+    vertical-align:middle;
   }
 
   .but:hover{

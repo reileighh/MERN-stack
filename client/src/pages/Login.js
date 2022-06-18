@@ -44,9 +44,9 @@ function Login() {
     <div className="body">
       <Navbar/>
       {/* <Div> */}
-        <div className="signupform">
-          <form >
-            <h1 style={{justifyContent:"center"}}>Login to your account</h1>
+        {/* <div className="signupform"> */}
+          <form className="signupform">
+            <h1 style={{justifyContent:"center",marginTop:'0px'}}>Login to your account</h1>
             <hr
             style={{
               marginTop: '0px',
@@ -54,8 +54,8 @@ function Login() {
             }}
             />
          
-          <div style={{marginTop:"20px"}}>
             <input
+            style={{marginTop:"20px"}}
               className="inputLogin"
               type="text"
               name="username"
@@ -63,10 +63,9 @@ function Login() {
                 onChange={handleChange}
                 value={values.username}
             />
-          </div>
       
-          <div style={{marginTop:"20px"}}>
             <input
+              style={{marginTop:"20px"}}
               className="inputLogin"
               type="password"
               name="password"
@@ -74,7 +73,6 @@ function Login() {
                onChange={handleChange}
                 value={values.password}
             />
-          </div> 
         
 
           <div style={{marginTop:"15px"}}>
@@ -82,15 +80,15 @@ function Login() {
           </div>
 
 
-          <div style={{marginTop:"20px", marginBottom:"10px"}}>
-            <button className="but" onClick={handleLogin} >
+            <button style={{marginTop:"20px", marginBottom:"10px"}} 
+            className="but" onClick={handleLogin} >
               Log In
             </button>
-          </div>
+          
 
           </form>
 
-        </div>
+        {/* </div> */}
       {/* </Div> */}
       
       

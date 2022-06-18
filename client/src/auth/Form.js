@@ -25,3 +25,7 @@ const Form = () => {
 }
 
 export default Form
+
+/* Here, we have a state formIsSubmitted and is initially initialised to false. However, we have a 
+submit form method that updates this formIsSubmitted state. Depending on the state, it will render either 
+the form or account created page.*/

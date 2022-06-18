@@ -1,3 +1,5 @@
+/*This function will return an object. */
+
 const validation = (values) => {
     let errors={};
 if(!values.fullname){
@@ -19,5 +21,6 @@ if(!values.email){
                               
   return errors;
 }
-/*This function will return an object. */
+
 export default validation
+

@@ -23,13 +23,44 @@ const SignupForm = ({ submitForm }) => {
     event.preventDefault();
     setErrors(validation(values));
     setDataIsCorrect(true);
+      // postData();
+      let databody={
+        "fullname":values.fullname,
+        "username":values.username,
+        "email":values.email,
+        "password":values.password,
+      }
+      fetch('/Signup',{
+         method:'POST',
+         body:JSON.stringify(databody),
+         headers:{
+            'Content-type': 'application/json'
+         },
+      })
+     .then(res=>{
+        if(res.status===200){
+          console.log("SUCCESS in react");
+          return res.json();
+        } else if(res.status === 409){
+          console.log("User already exist in react");
+        }
+     })
+     .then((data)=>{
+           console.log(data);
+     })
+     .catch(error=>console.log('Error posting in react'));
+    
+    
+    
+  };
+
+  const postData = () =>{
     let databody={
       "fullname":values.fullname,
       "username":values.username,
       "email":values.email,
       "password":values.password,
     }
-    console.log(databody);
     fetch('/Signup',{
        method:'POST',
        body:JSON.stringify(databody),
@@ -37,11 +68,25 @@ const SignupForm = ({ submitForm }) => {
           'Content-type': 'application/json'
        },
     })
-    .then(res=>res.JSON())
-   .then(data=>console.log(data))
-   .catch(error=>console.log('ERROR'));
-  };
-  // After submitting form, we use validation to retrieve the error object and use setErrors to set the error
+    // .then(res=>res.JSON())
+   .then(res=>{
+      if(res.status===200){
+        console.log("SUCCESS in react");
+        return res.json();
+      } else if(res.status === 409){
+        console.log("User already exist in react");
+      }
+   })
+   .then((data)=>{
+         console.log(data);
+   })
+   .catch(error=>console.log('Error posting in react'));
+
+  }
+  /* dataIsCorrect is set to true after we click on the submit button. 
+  After submitting form, we use validation to retrieve the error object and use setErrors to set the
+  error. After making sure that there is no errors and we have submitted, we will display thea account
+  created.*/
   useEffect(() => {
     if (Object.keys(errors).length === 0 && dataIsCorrect) {
       submitForm(true);
