@@ -94,24 +94,22 @@ const SignupForm = ({ submitForm }) => {
   }, [errors, dataIsCorrect, submitForm]);
 
   return (
-    <div className="container">
-      <div className="app-wrapper">
-        <div>
-          <h2 className="title">Create Account</h2>
-        </div>
-        <form className="form-wrapper">
-          <div className="name">
-            <label className="label">Full Name</label>
-            <input
-              className="input"
-              type="text"
-              name="fullname"
-              value={values.fullname}
-              onChange={handleChange}
-            />
-            {errors.fullname && <p className="error"> {errors.fullname} </p>}
-          </div>
-          <div className="username">
+      <form className="app-wrapper">
+        <h2 className="title1">Create Account</h2>
+        <h3 style={{color:'grey'}}>Please fill in this form to create an account!</h3>
+      
+         
+      <label className="label">Full Name</label>
+      <input
+          className="input"
+          type="text"
+          name="fullname"
+          value={values.fullname}
+          onChange={handleChange}
+      />
+        {errors.fullname && <p className="error"> {errors.fullname} </p>}
+         
+          
             <label className="label">Username</label>
             <input
               className="input"
@@ -121,8 +119,8 @@ const SignupForm = ({ submitForm }) => {
               onChange={handleChange}
             />
             {errors.username && <p className="error"> {errors.username} </p>}
-          </div>
-          <div className="email">
+          
+        
             <label className="label">Email</label>
             <input
               className="input"
@@ -132,8 +130,8 @@ const SignupForm = ({ submitForm }) => {
               onChange={handleChange}
             />
             {errors.email && <p className="error"> {errors.email} </p>}
-          </div>
-          <div className="password">
+  
+         
             <label className="label">Password</label>
             <input
               className="input"
@@ -143,15 +141,11 @@ const SignupForm = ({ submitForm }) => {
               onChange={handleChange}
             />
             {errors.password && <p className="error"> {errors.password} </p>}
-          </div>
-          <div>
+
             <button className="submit" onClick={handleFormSubmit}>
               Sign Up
             </button>
-          </div>
-        </form>
-      </div>
-    </div>
+      </form>
   );
 };
 
