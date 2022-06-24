@@ -3,11 +3,9 @@ import "./Signup.css";
 
 const SignupFormSuccess = () => {
   return (
-    <div className="container">
-      <div className="app-wrapper">
+       <div className="success-wrapper">
         <h1 className="form-success">Account Successfully Created!</h1>
-      </div>
-    </div>
+       </div> 
   );
 };
 

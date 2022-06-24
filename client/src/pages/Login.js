@@ -43,8 +43,7 @@ function Login() {
     
     <div className="body">
       <Navbar/>
-      {/* <Div> */}
-        {/* <div className="signupform"> */}
+     
           <form className="signupform">
             <h1 style={{justifyContent:"center",marginTop:'0px'}}>Login to your account</h1>
             <hr
@@ -88,8 +87,7 @@ function Login() {
 
           </form>
 
-        {/* </div> */}
-      {/* </Div> */}
+      
       
       
       

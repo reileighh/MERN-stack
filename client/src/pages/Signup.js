@@ -16,16 +16,16 @@ function Signup() {
  
 
   return (
-    <div className= 'signupdiv'>
+    <div className ='signupdiv'>
       <Navbar/>
       <Typed 
       style={{color:'black', fontWeight:'600', display:'flex',justifyContent:'center',alignItems:'center',fontSize:'56px'}}
       strings={['Sign Up and travel with us!']}
       typeSpeed={40}
       loop/>
-       {!formIsSubmitted?<SignupForm submitForm={submitForm} />:<SignupFormSuccess/>}
-      <h2 style={{display:'flex',justifyContent:'center', fontSize:'20px', marginTop:'16px', color:'white' , marginBottom:'0px'}} >Already have an account? <a href='/login' style={{color:'white'}}> Login here</a></h2>
-      {/* <Footer /> */}
+     <SignupForm submitForm={submitForm} />
+    <h2 style={{display:'flex',justifyContent:'center', fontSize:'20px', marginTop:'16px', color:'white' , marginBottom:'0px'}} >Already have an account? &nbsp;<a href='/login' style={{color:'white'}}>Login here</a></h2>
+       
     </div>
   );
 }
