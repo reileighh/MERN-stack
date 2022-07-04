@@ -1,11 +1,11 @@
-.dropdown{
+.dropdownReviews{
     text-align:left;
     color:black;
     background:white;
     font-weight:bold;
 }
 
-.dropdown-button{
+.dropdown-buttonReviews{
     float:left;
     margin-top:8px;
     margin-bottom:8px;
@@ -13,25 +13,26 @@
     margin-left:0px;
 }
 
-.icon{
+.iconReviews{
     margin-left:12px;
 }
 
-.button1{
+.button1Reviews{
     color:white;
     background:rgb(192, 189, 189);
     font-weight:bold;
 
 }
 
-.button2{
+.button2Reviews{
     color:white;
     background:grey;
     font-weight:bold;
 }
-.heading{
+.headingReviews{
     margin-top:32px;
     font-size:32px;
+    color:black;
 }
 .reviews{
     display:flex;
@@ -42,7 +43,7 @@
     margin-bottom:0;
 }
 
-.title{
+.titleReviews{
     font-weight:500;
     color:black;
     font-size:24px;
@@ -51,7 +52,7 @@
     margin-top:8px;
 }
 
-.text{
+.textReviews{
     color:rgb(104, 100, 100);
     margin-top:0;
 }

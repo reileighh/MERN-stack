@@ -5,11 +5,25 @@ import Sweden from "../assets/Sweden.jpg";
 import NewZealand from "../assets/NewZealand.jpg";
 import France from "../assets/France.jpg";
 import './DestinationStyle.css';
+import { useNavigate } from 'react-router-dom';
 
 const Destination = () => {
+  const navigate = useNavigate();
+    const navigateToChina = () =>{
+        navigate('/China');
+    };
+    const navigateToSweden = () =>{
+      navigate('/Sweden');
+    };
+    const navigateToNewZealand = () =>{
+      navigate('/NewZealand');
+    };
+    const navigateToFrance = () =>{
+      navigate('/France');
+    };
   return (
     <div className="d-flex justify-content-around mt-lg-5 mb-lg-5">
-      <Card style={{ width: '24rem'}} className= 'card-style' role="button" onClick="location.href='/China'" >
+      <Card style={{ width: '20rem'}} className= 'card-style' role="button" onClick={navigateToChina} >
         {/* <Card.Link href='/China'> */}
         <Card.Img variant="top" src={China} />
         <Card.Body>
@@ -23,7 +37,7 @@ const Destination = () => {
       </Card>
 
 
-      <Card style={{ width: '24rem' }} className= 'card-style'>
+      <Card style={{ width: '20rem' }} className= 'card-style' onClick={navigateToSweden}>
         <Card.Img variant="top" src={Sweden}/>
         <Card.Body>
           <Card.Title>Sweden</Card.Title>
@@ -33,7 +47,7 @@ const Destination = () => {
         </Card.Body>
       </Card>
 
-      <Card style={{ width: '24rem' }} className= 'card-style'>
+      <Card style={{ width: '20rem' }} className= 'card-style' onClick={navigateToNewZealand}>
         <Card.Img variant="top" src={NewZealand} />
         <Card.Body>
           <Card.Title>New Zealand</Card.Title>
@@ -45,7 +59,7 @@ const Destination = () => {
       </Card>
 
       
-      <Card style={{ width: '24rem' }} className= 'card-style'>
+      <Card style={{ width: '20rem' }} className= 'card-style'onClick={navigateToFrance}>
         <Card.Img variant="top" src={France} />
         <Card.Body>
           <Card.Title>France</Card.Title>
