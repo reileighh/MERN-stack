@@ -8,6 +8,7 @@ import Settings from './pages/Settings';
 import Review from './pages/Review';
 import China from './pages/China';
 import Sweden from './pages/Sweden'
+import NewZealand from './pages/NewZealand'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/Reviews" element={<Review/>} />
         <Route path="/China" element={<China/>} />
         <Route path="/Sweden" element={<Sweden/>} />
+        <Route path="/NewZealand" element={<NewZealand/>} />
       </Routes>
       </div>
     </Router>

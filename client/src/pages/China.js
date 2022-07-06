@@ -11,6 +11,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../Styles/China.css'
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const China = () => {
     const navigate = useNavigate();
@@ -33,9 +34,9 @@ const China = () => {
         navigate('/China/Guilin');
     };
   return (
-    <div>
+    <div style={{marginBottom:'2rem'}}>
         <Navbar/>
-        <div style={{display:'flex',flexDirection:'column',padding:'0rem 3rem',height:'100vh'}}>
+        <div style={{display:'flex',flexDirection:'column',padding:'0rem 3rem',height:'100vh',marginBottom:'10rem'}}>
             <h2 style={{color:'black',textAlign:'center', marginTop:'2rem'}}>Popular Destinations</h2>
             <p style={{marginTop:'1rem', marginLeft:'1rem', marginRight:'1rem'}}>
             Excursions in China with local guides are available in the most popular cities of the country.
@@ -43,26 +44,26 @@ const China = () => {
             than 515 attractions are currently available for online booking
             </p>
 
-            <Container style={{ height:'100vh', width:'100%'}}>
+            <Container style={{ height:'90vh', width:'100%', padding:'none', marginBottom:'10rem'}}>
                 <Row style={{display:'flex', flexDirection:'row',  height:'47vh'}}>
 
                    
                     <Col style={{ display:'flex', justifyContent:'center', overflow:'hidden'}} className="hoverEffects"  onClick={navigateToShanghai}>
-                        <img src={Shanghai} alt='Shanghai'height='380rem' width='430rem' href='/China/Shanghai' className='ChinaIMG'/>
+                        <img src={Shanghai} alt='Shanghai'height='350rem' width='360rem'  className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Shanghai
                         </span>
                     </Col>
 
                     <Col style={{ display:'flex', justifyContent:'center'}} className="hoverEffects" onClick={navigateToGuangzhou}>
-                    <img src={Guangzhou} alt='Guangzhou' height='380rem' width='430rem' className='ChinaIMG'/>
+                    <img src={Guangzhou} alt='Guangzhou' height='350rem' width='360rem' className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Guangzhou
                         </span>
                     </Col>
 
                     <Col style={{ display:'flex', justifyContent:'center'}} className="hoverEffects" onClick={navigateToHangzhou}>
-                    <img src={Hangzhou} alt='Hangzhou' height='380rem' width='430rem' className='ChinaIMG'/>
+                    <img src={Hangzhou} alt='Hangzhou' height='350rem' width='360rem' className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Hangzhou
                         </span>
@@ -70,23 +71,23 @@ const China = () => {
                 </Row>
 
 
-                <Row style={{display:'flex', flexDirection:'row',  height:'47vh', marginTop:'1rem', marginBottom:'2rem'}}>
+                <Row style={{display:'flex', flexDirection:'row',  height:'47vh', marginTop:'4rem', marginBottom:'10rem'}}>
                     <Col style={{ display:'flex', justifyContent:'center'}} className="hoverEffects" onClick={navigateToBeijing}>
-                        <img src={Beijing} alt='Beijing'height='380rem' width='430rem' className='ChinaIMG'/>
+                        <img src={Beijing} alt='Beijing' height='350rem' width='360rem' className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Beijing
                         </span>
                     </Col>
 
                     <Col style={{ display:'flex', justifyContent:'center'}} className="hoverEffects" onClick={navigateToHongkong}>
-                    <img src={Hongkong} alt='Hongkong' height='380rem' width='430rem' className='ChinaIMG'/>
+                    <img src={Hongkong} alt='Hongkong' height='350rem' width='360rem' className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Hongkong
                         </span>
                     </Col>
 
                     <Col style={{ display:'flex', justifyContent:'center'}} className="hoverEffects" onClick={navigateToGuilin}>
-                    <img src={Guilin} alt='Guilin' height='380rem' width='430rem' className='ChinaIMG'/>
+                    <img src={Guilin} alt='Guilin' height='350rem' width='360rem' className='ChinaIMG'/>
                         <span className='overlayChina' >
                          Guilin
                         </span>
@@ -96,8 +97,11 @@ const China = () => {
                 
 
             </Container>
+            
 
         </div>
+    
+       
     </div>
   )
 }
