@@ -9,6 +9,7 @@ import Review from './pages/Review';
 import China from './pages/China';
 import Sweden from './pages/Sweden'
 import NewZealand from './pages/NewZealand'
+import France from './pages/France'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/China" element={<China/>} />
         <Route path="/Sweden" element={<Sweden/>} />
         <Route path="/NewZealand" element={<NewZealand/>} />
+         <Route path="/France" element={<France/>} />
       </Routes>
       </div>
     </Router>
