@@ -65,3 +65,9 @@ h1{
   .but:hover{
     background-image:linear-gradient(to right,rgb(255, 94, 0),white);
   }
+
+  .loginError{
+    color:red;
+    font-weight:700;
+    font-size:1.3rem;
+  }
