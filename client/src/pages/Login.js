@@ -14,7 +14,7 @@ function Login() {
   //   flex-direction:row;
   // `
   const navigate = useNavigate();
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState("");
 
   const [values, setValues] = useState({
     username:"",
@@ -45,8 +45,10 @@ function Login() {
        navigate('/Booking');
      } else if(res.status === 409){
        console.log("Password is wrong");
+       setPosts("Password is incorrect");
      } else{
        console.log("user does not exist!");
+       setPosts("User does not exist");
      }
   })
   .then((data)=>{
@@ -111,7 +113,7 @@ function Login() {
           </div>
 
           <div className="loginError" style={{display:'inline-block',marginLeft:'7rem' }}>
-            Password is incorrect
+            {posts}
           </div>
 
           </div>
