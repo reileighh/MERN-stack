@@ -1,48 +1,45 @@
 import { faChainSlash } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import China from "../assets/China.jpg";
+import Greece from "../assets/Greece.jpg";
+import hotairbal from "../assets/hotairbal.jpg";
+import mountain from "../assets/mountain.jpg";
 
 
 function ControlledCarousel() {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={1200}>
         <img
           className="d-block w-100"
-          src={China}
+          src={Greece}
           alt="First slide"
           height={700}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 style={{color:"white", fontFamily:"sans-serif"}} >Visit Europe!</h3>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={600}>
         <img
           className="d-block w-100"
-          src={China}
+          src={hotairbal}
           alt="Second slide"
           height={700}
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Visit America!</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={China}
+          src={mountain}
           alt="Third slide"
           height={700}
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3 style={{color:"white, fontFamily: sans-serif"}}>Visit Asia!</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
