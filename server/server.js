@@ -28,12 +28,14 @@ const commentsRouter = require("./routes/comments");
 const dishesRouter = require("./routes/dishes");
 const usersRouter = require("./routes/users");
  const loginRouter = require("./routes/loginRoute");
+ const updateRouter = require("./routes/updateRoute");
 
 //models
 //app.use("/comments", commentsRouter);
 //app.use("/dishes", dishesRouter);
 app.use("/Signup", usersRouter);
 app.use('/Login', loginRouter);
+app.use('/Settings', updateRouter);
 
 //backend routing PORT
 const PORT = process.env.PORT || 5000;
